@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    text-decoration: none;
+    width: auto;
+    
+    
+}
+
+
+
+#cabeza  {
+    display: grid ;
+    flex-direction: column;
+    text-decoration: none;
+    background: linear-gradient(skyblue, pink);
+    list-style: none;
+    align-content: center;
+    justify-content: center;
+    height: auto;
+    justify-items: center;
+    width: 100vw;
+    
+    
+}
+
+
+
+.cabeza__logo {
+    
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+@keyframes logoAnimado {
+    0% {
+        scale: -1;
+    }
+    33% {
+        scale: -0.6;
+    }
+    66% {
+        scale: 1.2;
+    }
+    100% {
+        scale: 1;
+    }
+    
+}
+.cabeza__logo a img {
+    width: 15vw;
+    margin-top: 3vh;
+    animation-name: logoAnimado;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 0.5;
+}
+    
+@media (max-width: 500px) {
+    .cabeza__logo a img {
+        width: 30vw;
+    }
+}
+
+.cabeza__logo a img:hover{
+    transform: rotate(360deg);
+    transition: linear 1s;
+    
+}
+
+
+.cabeza__banner {
+    background-color: rgb(151, 18, 18);
+    width: 100vw;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100vw;
+    margin: auto;
+    padding-left: 0;
+
+} 
+
+
+
+
+#cabeza .cabeza__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 7px;    
+}
+
+.cabeza__menu ul li{
+    text-decoration: none;
+    padding: 1vh;
+    width: auto;
+    height:auto;
+    border-radius: 20px;
+    border: 1px rgb(243, 231, 165) ;
+    border-style: groove;
+    color: rgb(178, 199, 236);
+    background-color: pink;
+    list-style: none;
+    text-align: center;
+    
+    
+}
+
+.cabeza__menu ul li a{
+    color: rgb(5, 178, 201);
+    font-style: italic;
+    font-size: large;
+    padding: auto;
+    
+}
+
+
+
+#cabeza .cabeza__menu ul li:hover {
+    background-color: rgb(237, 243, 181);
+    font-family: sans-serif;
+}
+
+
+   
+#principal {
+    background-image: url(../imagenes/fondo_sin_color_chico.png);
+    background-repeat: repeat;
+    background-position: top;
+    padding-top: 1vh;
+    height: auto;
+    
+}
+
+
+#principal h1{
+    font-size: xx-large;
+    text-align: center;
+    color: pink;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: antiquewhite;
+    width: 100vw;
+    animation-name: shakeY ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+
+
+}
+
+@keyframes fadeInRight {
+    0% {
+        animation: jello;
+        display: inline;
+    }
+    
+
+}
+
+
+
+
+#principal .fotos {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    padding-top: 10px;
+    width: 100vw;
+    animation-name: fadeInRight ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    
+    
+}
+
+@media (max-width : 500px) {
+    .fotos span img{
+        width: 30vw;
+        
+    }
+}
+
+
+
+
+
+#productos {
+    width: 100vw;
+    padding-top: 10px;
+   
+}
+
+#productos h2 {
+    text-align: center;
+    color: rgb(216, 132, 153) ;
+    background-color: rgb(197, 238, 238);
+   
+    font-style: italic;
+    
+}
+
+#productos .contenedor__productos{
+    display: grid;
+    background-image: url(../imagenes/fondo_sin_color_chico.png);
+    background-repeat: repeat;
+    width: 100wv;
+    padding-top: 10vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+    justify-content: center;
+    align-content: center;
+    margin: 1vh 1vw;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 10vh;;
+    
+}
+
+@media (max-width : 500px) {
+
+    #productos .contenedor__productos{
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        gap: 1px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+}
+
+
+
+#productos .contenedor__productos .producto__item {
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(243, 197, 183);
+    padding: 1vh;
+}
+
+
+
+#productos .contenedor__productos .producto__item a,img {
+    width: 22vw;
+    height: auto;
+
+}
+
+
+
+@media (max-width : 500px) {
+   .producto__item a,img {
+        width: 45vw;
+        justify-content: center;
+
+    }
+}
+
+#productos .contenedor__productos .producto__item p {
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: medium;
+    border-radius: 20px;
+    background-color: rgb(235, 145, 117);
+    color: rgb(197, 238, 238);
+
+}
+
+
+#pie {
+    width: 100vw;
+    padding: 0;
+}
+
+#pie .contenedor__pie {
+    background: linear-gradient(skyblue 40%, pink );
+    display: flex;
+    align-items: center;  
+    padding: 1vw; 
+}
+
+@media (max-width: 500px) {
+    #pie .contenedor__pie {
+        align-content: center;
+        align-items: center;
+    }
+    
+}
+
+
+@keyframes textoPie {
+    0% {
+        color: rgb(247, 136, 156);
+       
+        
+    }
+    50% {
+        color:rgb(149, 157, 224);
+        
+        
+        
+    }
+    80% {
+        color: rgb(247, 38, 73);
+        
+        
+    }
+    
+}
+
+.hijo__1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    color: rgb(216, 132, 153);
+    width: auto;
+    height: 5vh;
+    padding-top: 1vh;
+    animation: textoPie;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+
+
+
+.contenedor__pie .hijo__2 a img {
+    width: 6vw;
+    padding: 1vh;
+}
+@media (max-width: 500px) {
+    #pie .contenedor__pie .hijo__2 a img{
+        width: 10vw;
+    }
+}
+
+
+.contenedor__pie .hijo__3 a img {
+    width: 6vw;
+    padding: 1vh;
+}
+@media (max-width: 500px) {
+    #pie .contenedor__pie .hijo__3 a img{
+        width: 10vw;
+    }
+}
+
+
+
+
+
+/* Estilo página Tortas */
+
+#navegacion .tortas__logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+#navegacion .tortas__logo a img {
+    width: 15vw;
+  
+}
+
+
+#texto {
+    padding: 5vh;
+    
+}
+
+#texto .tortas__titulo {
+    text-align: center;
+    color: pink;
+    font-style: italic;
+}
+
+.tortas__h3 {
+    text-align: center;
+    font-size: medium;
+    color: pink;
+}
+
+.tortas__parrafo-1 {
+    text-align: center;
+    font-size: large;
+    color: palevioletred;
+}
+
+.tortas__parrafo-2 {
+    text-align: center;
+    font-size: larger;
+    color: palevioletred;
+    font-style: italic;
+}
+
+
+#tortas .contenedor__fotos{
+    display: grid;
+    background-image: url(../imagenes/fondo_sin_color_chico.png);
+    background-repeat: repeat;
+    width: 100wv;
+    padding-top: 10vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10vh;
+    justify-content: center;
+    align-content: center;
+    margin: 1vh 1vw;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 10vh;;
+}
+
+#tortas .contenedor__fotos div {
+    background-color: pink;
+    padding: 2vh;
+}
+
+
+/* Página de contacto */
+
+#contacto {
+    background-image: url(../imagenes/fondo_sin_color_chico.png);
+    background-repeat: repeat;
+}
+
+#contacto .formulario {
+    display: flex;
+    padding: 2vh;
+    background-color: pink;
+}
+
+/* Página Petit Fours */
+
+.petit__titulo { 
+    text-align: center;
+    color: palevioletred;
+}
+
+.petit__texto {
+    text-align: center;
+    font-family: sans-serif;
+    color: pink;
+}
+
+#petitFotos .petit__contenedor {
+    display: grid;
+    background-image: url(../imagenes/fondo_sin_color_chico.png);
+    background-repeat: repeat;
+    width: 100wv;
+    padding-top: 10vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10vh;
+    justify-content: center;
+    align-content: center;
+    margin: 3vh 3vw;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+#petitFotos .petit__contenedor div p {
+    background-color: pink;
+    padding: 2vh 2vw;
+}
