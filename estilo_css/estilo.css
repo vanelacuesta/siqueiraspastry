@@ -21,8 +21,6 @@
     height: auto;
     justify-items: center;
     width: 100vw;
-    
-    
 }
 
 
@@ -58,7 +56,7 @@
     animation-delay: 0.5;
 }
     
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .cabeza__logo a img {
         width: 30vw;
     }
@@ -77,6 +75,7 @@
     color: white;
     text-align: center;
     position: fixed;
+    z-index: 9999;
     width: 100vw;
     margin: auto;
     padding-left: 0;
@@ -86,7 +85,7 @@
 
 
 
-#cabeza .cabeza__menu {
+.cabeza__menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -120,7 +119,7 @@
 
 
 
-#cabeza .cabeza__menu ul li:hover {
+.cabeza__menu ul li:hover {
     background-color: rgb(237, 243, 181);
     font-family: sans-serif;
 }
@@ -438,10 +437,19 @@
 
 #contacto .formulario {
     display: flex;
-    padding: 2vh;
+    padding-top: 3vh;
     background-color: pink;
 }
+#pieDeContacto {
+    width: 100vw;
+    padding-top: 2vh;
+}
 
+.textoContacto{
+    color: pink;
+    text-align: center;
+
+}
 /* Página Petit Fours */
 
 .petit__titulo { 
@@ -474,4 +482,125 @@
 #petitFotos .petit__contenedor div p {
     background-color: pink;
     padding: 2vh 2vw;
+}
+
+/* Estilo de página Nuestros productos */
+
+#paginaProductos {
+    display: grid ;
+    flex-direction: column;
+    text-decoration: none;
+    background: linear-gradient(skyblue, pink);
+    list-style: none;
+    align-content: center;
+    justify-content: center;
+    height: auto;
+    justify-items: center;
+    width: 100vw;
+}
+
+#paginaProductos .cabeza__menu ul li a {
+    text-decoration: none;
+}
+
+
+@keyframes fotosdefondo {
+    0% {
+        background-image: url(../imagenes/31.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20vw;
+        width: 100vw;
+        
+    }
+    33% {
+        background-image: url(../imagenes/40.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20vw;
+        width: 100vw;
+       
+    }
+    66% {
+        background-image: url(../imagenes/torta5.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20vw;
+        width: 100vw;
+        
+    }
+    100% {
+        background-image: url(../imagenes/34.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20vw;
+        width: 100vw;
+    }
+    
+    
+    
+}
+
+#productosPrincipal {
+    width: 100vw;
+    margin: auto;
+   
+}
+
+#productosPrincipal .productosPrincipal__contenedor{
+    
+    animation-name: fotosdefondo;
+    animation-duration: 6s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+    transition-duration: 1s;
+   
+}
+
+#productosPrincipal .productosPrincipal__contenedor h1 {
+    text-align: center ;
+    padding-top: 5vh;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(207, 26, 63);
+    
+}
+
+.productosPrincipal__catalogo {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    gap: 15px;
+    padding: 2px;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .productosPrincipal__catalogo {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+ 
+
+.contenedor__pie {
+    background: linear-gradient(skyblue 40%, pink );
+    display: flex;
+    align-items: center;  
+    padding: 1vw; 
+}
+
+@media (max-width: 500px) {
+     .contenedor__pie {
+        align-content: center;
+        align-items: center;
+    }
+    
 }
