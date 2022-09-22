@@ -545,6 +545,10 @@
     
 }
 
+#paginaProductos .cabeza__logo a img {
+    
+}
+
 #productosPrincipal {
     width: 100vw;
     margin: auto;
@@ -582,9 +586,16 @@
     padding-top: 10px;
 }
 
+.productosPrincipal__catalogo div img {
+    width: 20vw;
+}
+
 @media (max-width: 768px) {
     .productosPrincipal__catalogo {
         grid-template-columns: 1fr 1fr;
+    }
+    .productosPrincipal__catalogo div img {
+        width: 40vw;
     }
 }
 
