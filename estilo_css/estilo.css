@@ -74,7 +74,7 @@
     width: 100vw;
     color: white;
     text-align: center;
-    position: fixed;
+    position: fixed center;
     z-index: 9999;
     width: 100vw;
     margin: auto;
@@ -90,7 +90,11 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    padding-bottom: 7px;    
+    padding-bottom: 7px;
+    padding-top: 7px;
+    justify-items: center;
+    align-items: center; 
+    text-align: center;   
 }
 
 .cabeza__menu ul li{
@@ -114,6 +118,7 @@
     font-style: italic;
     font-size: large;
     padding: auto;
+    text-decoration: none;
     
 }
 
