@@ -239,7 +239,7 @@
         align-content: center;
         justify-items: center;
         align-items: center;
-        gap: 1px;
+        gap: 4px;
         padding-top: 2px;
         padding-bottom: 2px;
     }
@@ -251,7 +251,7 @@
 #productos .contenedor__productos .producto__item {
     justify-items: center;
     align-items: center;
-    background-color: rgb(243, 197, 183);
+    background-color: pink;
     padding: 1vh;
 }
 
@@ -274,7 +274,7 @@
 }
 
 #productos .contenedor__productos .producto__item p {
-    text-align: center;
+    text-align: center center;
     font-family: sans-serif;
     font-style: italic;
     font-size: medium;
