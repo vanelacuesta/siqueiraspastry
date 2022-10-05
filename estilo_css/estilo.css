@@ -69,11 +69,11 @@
 
 .cabeza__banner {
     background-color: rgb(151, 18, 18);
-    width: 100vw;
+    
     color: white;
     text-align: center;
     position: fixed;
-    z-index: 999999;
+    width: 100vw;
 } 
 
 
@@ -262,7 +262,7 @@
 
 @media (max-width : 500px) {
    .producto__item a,img {
-        width: 45vw;
+        width: 40vw;
         justify-content: center;
 
     }
@@ -271,19 +271,21 @@
 #productos .contenedor__productos .producto__item p {
     text-align: center;
     justify-content: center;
+    align-content: center;
     font-family: sans-serif;
     font-style: italic;
-    font-size: medium;
+    font-size: 1.5rem;
     border-radius: 20px;
-    background-color: rgb(235, 145, 117);
+    background-color: rgb(247, 148, 163);
     color: rgb(197, 238, 238);
-
+    margin-top: 1vh;
 }
 
 
 #pie {
     width: 100vw;
     padding: 0;
+    
 }
 
 #pie .contenedor__pie {
