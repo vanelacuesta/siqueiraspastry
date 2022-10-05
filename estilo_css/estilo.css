@@ -64,23 +64,20 @@
 
 .cabeza__logo a img:hover{
     transform: rotate(360deg);
-    transition: linear 1s;
-    
+    transition: linear 1s;    
 }
-
 
 .cabeza__banner {
     background-color: rgb(151, 18, 18);
     width: 100vw;
     color: white;
     text-align: center;
-    position: fixed ;
-    z-index: 9999999;
-    width: 100vw;
-    margin: auto;
-    padding-left: 0;
-
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
 } 
+
 
 
 
@@ -274,7 +271,8 @@
 }
 
 #productos .contenedor__productos .producto__item p {
-    text-align: center center;
+    text-align: center;
+    justify-content: center;
     font-family: sans-serif;
     font-style: italic;
     font-size: medium;
