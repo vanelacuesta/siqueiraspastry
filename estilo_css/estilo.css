@@ -51,7 +51,10 @@
 }
 @media (max-width: 768px) {
     .cabeza__logo a img {
-        width: 30vw;
+        width: 40vw;
+        padding-top: 1vh;
+        margin-top: 0;
+        top: 0;
     }
 }
 
@@ -60,12 +63,13 @@
     transition: linear 1s;    
 }
 
-.cabeza__banner {
+ .cabeza__banner {
     background-color: rgb(151, 18, 18);
     width: 100vw;
     color: white;
     text-align: center;
-    position: fixed center;
+    position:  sticky;
+    
     top: 0;
 } 
 
@@ -92,7 +96,7 @@
     color: rgb(178, 199, 236);
     background-color: pink;
     list-style: none;
-    text-align: center;
+    
     
     
 }
