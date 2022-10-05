@@ -68,9 +68,8 @@
     width: 100vw;
     color: white;
     text-align: center;
-    position:  sticky;
-    
-    top: 0;
+    position:  fixed;
+    transform: translateX(-41.7%);
 } 
 
 .cabeza__menu {
