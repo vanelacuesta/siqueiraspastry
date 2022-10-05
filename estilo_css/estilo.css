@@ -4,11 +4,7 @@
     padding: 0;
     text-decoration: none;
     width: auto;
-    
-    
 }
-
-
 
 #cabeza  {
     display: grid ;
@@ -22,8 +18,6 @@
     justify-items: center;
     width: 100vw;
 }
-
-
 
 .cabeza__logo {
     
@@ -55,7 +49,6 @@
     animation-iteration-count: 1;
     animation-delay: 0.5;
 }
-    
 @media (max-width: 768px) {
     .cabeza__logo a img {
         width: 30vw;
@@ -69,16 +62,12 @@
 
 .cabeza__banner {
     background-color: rgb(151, 18, 18);
-    
+    width: 100vw;
     color: white;
     text-align: center;
-    position: fixed;
-    width: 100vw;
+    position: fixed center;
+    top: 0;
 } 
-
-
-
-
 
 .cabeza__menu {
     display: flex;
@@ -234,9 +223,9 @@
         align-content: center;
         justify-items: center;
         align-items: center;
-        gap: 4px;
+        gap: 10px;
         padding-top: 2px;
-        padding-bottom: 2px;
+        padding-bottom: 0;
     }
 
 }
@@ -248,6 +237,7 @@
     align-items: center;
     background-color: pink;
     padding: 1vh;
+    padding-bottom: 0;
 }
 
 
@@ -274,7 +264,7 @@
     align-content: center;
     font-family: sans-serif;
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1rem;
     border-radius: 20px;
     background-color: rgb(247, 148, 163);
     color: rgb(197, 238, 238);
