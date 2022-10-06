@@ -316,7 +316,7 @@
 .tortas__logo {
     display: flex;
     justify-content: center;
-    padding-top: 2vh;
+    padding-top: 4vh;
     background: linear-gradient(pink, skyblue);
 }
 
