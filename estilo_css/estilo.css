@@ -52,7 +52,7 @@
 @media (max-width: 768px) {
     .cabeza__logo a img {
         width: 50vw;
-        padding-top: 1vh;
+        padding-top: 0vh;
         margin-top: 0;
         top: 0;
     }
@@ -68,9 +68,11 @@
     width: 100vw;
     color: white;
     text-align: center;
-    position:  fixed;
-    transform: translateX(-41.7%);
+    position:  sticky;
+    top: 0;
+    z-index: 999999;
 } 
+
 
 .cabeza__menu {
     display: flex;
@@ -128,7 +130,6 @@
     
 }
 
-
 #principal h1{
     font-size: xx-large;
     text-align: center;
@@ -141,24 +142,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-delay: 5s;
-
-
 }
-
 @keyframes fadeInRight {
     0% {
         animation: jello;
         display: inline;
     }
-    
-
 }
-
-
-
-
 #principal .fotos {
-
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -172,34 +163,24 @@
     animation-timing-function: 20s;
     animation-delay: 0s;
     animation-iteration-count: 1;
-    
-    
 }
 
 @media (max-width : 500px) {
     .fotos span img{
         width: 30vw;
-        
     }
 }
-
-
-
-
 
 #productos {
     width: 100vw;
     padding-top: 10px;
-   
 }
 
 #productos h2 {
     text-align: center;
     color: rgb(216, 132, 153) ;
     background-color: rgb(197, 238, 238);
-   
     font-style: italic;
-    
 }
 
 #productos .contenedor__productos{
@@ -220,7 +201,6 @@
 }
 
 @media (max-width : 500px) {
-
     #productos .contenedor__productos{
         grid-template-columns: 1fr 1fr;
         justify-content: center;
@@ -231,10 +211,7 @@
         padding-top: 2px;
         padding-bottom: 0;
     }
-
 }
-
-
 
 #productos .contenedor__productos .producto__item {
     justify-items: center;
@@ -244,21 +221,15 @@
     padding-bottom: 0;
 }
 
-
-
 #productos .contenedor__productos .producto__item a,img {
     width: 22vw;
     height: auto;
-
 }
-
-
 
 @media (max-width : 500px) {
    .producto__item a,img {
         width: 40vw;
         justify-content: center;
-
     }
 }
 
