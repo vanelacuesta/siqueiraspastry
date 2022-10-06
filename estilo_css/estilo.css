@@ -305,10 +305,19 @@
 
 /* Estilo página Tortas */
 
+.banner__fijo{
+    background-color: rgb(151, 18, 18) ;
+    color: white;
+    width: 100vw;
+    position: fixed;
+    text-align: center;
+
+}
+
 #navegacion .tortas__logo {
     display: flex;
     justify-content: center;
-    padding-top: 1vh;
+    padding-top: 2vh;
     background: linear-gradient(pink, skyblue);
 }
 
