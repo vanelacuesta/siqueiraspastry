@@ -98,9 +98,6 @@
     background-color: pink;
     list-style: none;
     transform: translateX(-8%);
-    
-    
-    
 }
 
 .cabeza__menu ul li a{
@@ -109,7 +106,6 @@
     font-size: large;
     padding: auto;
     text-decoration: none;
-    
 }
 
 
@@ -119,15 +115,12 @@
     font-family: sans-serif;
 }
 
-
-   
 #principal {
     background-image: url(../imagenes/fondo_sin_color_chico.png);
     background-repeat: repeat;
     background-position: top;
     padding-top: 1vh;
     height: auto;
-    
 }
 
 #principal h1{
@@ -149,7 +142,7 @@
         display: inline;
     }
 }
-#principal .fotos {
+.fotos{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
