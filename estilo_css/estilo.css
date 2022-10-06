@@ -311,10 +311,9 @@
     width: 100vw;
     position: fixed;
     text-align: center;
-
 }
 
-#navegacion .tortas__logo {
+.tortas__logo {
     display: flex;
     justify-content: center;
     padding-top: 2vh;
@@ -390,7 +389,6 @@
     padding: 1vh;
 }
 
-
 /* Página de contacto */
 
 #contacto {
@@ -431,15 +429,20 @@
     background-image: url(../imagenes/fondo_sin_color_chico.png);
     background-repeat: repeat;
     width: 100wv;
-    padding-top: 10vh;
+    padding-top: 3vh;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 10vh;
+    row-gap: 3vh;
     justify-content: center;
     align-content: center;
     margin: 3vh 3vw;
     align-items: center;
     justify-items: center;
-    
+}
+@media (max-width: 768px){
+    #petitFotos .petit__contenedor {
+        grid-template-columns: 1fr 1fr;
+        background-size: 3vh;
+    }
 }
 
 #petitFotos .petit__contenedor div p {
@@ -561,8 +564,6 @@
         width: 40vw;
     }
 }
-
- 
 
 .contenedor__pie {
     background: linear-gradient(skyblue 40%, pink );
