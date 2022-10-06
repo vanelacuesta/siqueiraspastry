@@ -511,10 +511,6 @@
     
 }
 
-#paginaProductos .cabeza__logo a img {
-    
-}
-
 #productosPrincipal {
     width: 100vw;
     margin: auto;
@@ -522,21 +518,25 @@
 }
 
 #productosPrincipal .productosPrincipal__contenedor{
-    
+    height: 20vh;
     animation-name: fotosdefondo;
-    animation-duration: 6s;
+    animation-duration: 10s;
     animation-delay: 0ms;
     animation-iteration-count: infinite;
     transition-duration: 1s;
-   
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 #productosPrincipal .productosPrincipal__contenedor h1 {
-    text-align: center ;
+    
     padding-top: 5vh;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(207, 26, 63);
-    
+    font-size: 2rem;
 }
 
 .productosPrincipal__catalogo {
