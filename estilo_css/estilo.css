@@ -134,7 +134,7 @@
     animation-name: shakeY ;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-delay: 5s;
+    animation-delay: 1s;
 }
 @keyframes fadeInRight {
     0% {
@@ -265,19 +265,12 @@
 @keyframes textoPie {
     0% {
         color: rgb(247, 136, 156);
-       
-        
     }
     50% {
         color:rgb(149, 157, 224);
-        
-        
-        
     }
     80% {
         color: rgb(247, 38, 73);
-        
-        
     }
     
 }
@@ -303,7 +296,7 @@
 }
 @media (max-width: 500px) {
     #pie .contenedor__pie .hijo__2 a img{
-        width: 10vw;
+        width: 11vw;
     }
 }
 
@@ -314,7 +307,7 @@
 }
 @media (max-width: 500px) {
     #pie .contenedor__pie .hijo__3 a img{
-        width: 10vw;
+        width: 11vw;
     }
 }
 
