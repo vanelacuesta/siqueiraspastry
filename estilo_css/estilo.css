@@ -471,6 +471,10 @@
     width: 100vw;
 }
 
+#paginaProductos .cabeza__logo{
+    padding-top: 4vh;
+}
+
 #paginaProductos .cabeza__menu ul li a {
     text-decoration: none;
 }
@@ -512,9 +516,6 @@
         height: 20vw;
         width: 100vw;
     }
-    
-    
-    
 }
 
 #productosPrincipal {
@@ -538,11 +539,9 @@
 }
 
 #productosPrincipal .productosPrincipal__contenedor h1 {
-    
-    padding-top: 5vh;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(207, 26, 63);
-    font-size: 5vh;
+    
 }
 
 .productosPrincipal__catalogo {
