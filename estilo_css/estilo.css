@@ -123,6 +123,13 @@
 }
 
 #principal h1{
+    color:rgb(245, 28, 71);
+    text-align: center;
+    font-family: serif;
+    background-color: rgb(169, 211, 228);
+}
+
+#principal h2{
     font-size: xx-large;
     text-align: center;
     color: pink;
