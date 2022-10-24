@@ -70,12 +70,16 @@ $tablet: 768px;
     @media (max-width:$tablet) {
         grid-template-columns: 1fr 1fr;
     }
+    .productosConSass{
+        background-color: rgb(250, 39, 74);
+        margin: 3vh;
+    }
     .productosConSass__nombre {
         text-align: center;
         color: rgb(250, 39, 74);
         background-color: pink;
         padding-top: 0;
-        margin: 0;
+        margin 0;
     }
     .productosConSass__descripcion {
         background-color: rgb(252, 205, 213);
@@ -98,7 +102,7 @@ $tablet: 768px;
 }
 #footerConSass{
     width: $completo;
-    height: 12vh;
+    height: auto;
     background: linear-gradient(pink,skyblue);
     margin-top: 10px;
     margin-bottom: 0;

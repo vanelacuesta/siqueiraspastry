@@ -7,13 +7,14 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="../estilo_css/estilo.css">
     <link rel="shortcut icon" href="../imagenes/foto-logo.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body id="contacto">
 
 
     <header id="cabeza__contacto">
         <p class="cabeza__banner">Pedidos por whatsapp!</p>
-        <div class="cabeza__logo">
+        <div class="cabeza__logoContacto">
             <a href="../index.html">
                 <img src="../imagenes/logo-redondo-fon do.png" alt="Logo">
             </a>
@@ -22,10 +23,16 @@
         <nav class="cabeza__menu">
             <ul>
                 <li>
-                    <a href="../paginas/contacto.html">Presupuestos para eventos </a>
+                    <a href="#">Macarons</a>
                </li>
                 <li> 
-                   <a href="../paginas/productos.html">Nuestros postres</a>
+                   <a href="../paginas/postres.html">Postres</a>
+                </li>
+                <li>
+                    <a href="../paginas/petit.html">Petit-Fours</a>
+                </li>
+                <li>
+                    <a href="../paginas/tortas.html">Tortas</a>
                 </li>
             </ul>
           </nav>
@@ -36,37 +43,48 @@
         <h1 class="textoContacto">Contactanos!</h1>
     </main>
 
-    <section  class="formulario">
+    <section class="formulario">
         <form action="enviar.php" method="" enctype="">
-            <div>
-                <label for="nombre">Nombre</label>
+            <div class="formularioItems">
+                <label for="nombre">Nombre*</label>
                 <input type="text" id="nombre" placeholder="Ingrese su nombre..." required>
             </div>
             
-            <div>
+            <div class="formularioItems">
                 <label for="mail">Email</label>
                 <input required type="email" id="mail" name="mail">
             </div>
     
-            <div>
-                <label for="Teléfono">Teléfono de contacto</label>
-                <input required type="tel" id="telefono" name="telefono">
+            <div class="formularioItems">
+                <label for="Teléfono">Teléfono de contacto*</label>
+                <input required type="tel" id="telefono" name="telefono" placeholder="Ingrese su número..." required>
             </div>
             
-        
-            
-            <div>
+            <div class="formularioItems">
                 <label for="comentarios">Escriba su mensaje</label>
-                <textarea name="" id="comentarios" cols="30" rows="5"></textarea>
+                <textarea name="" id="comentarios" cols="50" rows="10"></textarea>
             </div>
             
-            <div>
+            <div class="formularioItems">
                 <input type="submit" value="Enviar ahora">
                 <input type="reset" value="Borrar todo">
-                
             </div>
 
         </section>
+
+        <aside id="imagenesEnContacto">
+            <div class="carruselCss">
+                <ul>
+                    <li><img src="../imagenes/carruselContacto1.png" alt=""></li>
+                    <li><img src="../imagenes/carruselContacto2.png" alt=""></li>
+                    <li><img src="../imagenes/carruselContacto3.png" alt=""></li>
+                    <li><img src="../imagenes/carruselContacto4.png" alt=""></li>
+                    <li><img src="../imagenes/carruselContacto5.png" alt=""></li>
+                    <li><img src="../imagenes/carruselContacto6.png" alt=""></li>
+                    <li><img src="../imagenes/carruselContacto7.png" alt=""></li>
+                </ul>
+            </div>
+        </aside>
       
     <footer id="pieDeContacto">
         <div class="contenedor__pie">

@@ -225,7 +225,7 @@
     height: auto;
 }
 
-@media (max-width : 500px) {
+@media (max-width : 768px) {
    .producto__item a,img {
         width: 40vw;
         justify-content: center;
@@ -236,7 +236,7 @@
     text-align: center;
     justify-content: center;
     align-content: center;
-    font-family: sans-serif;
+    font-family: 'Caveat', cursive;
     font-style: italic;
     font-size: 1rem;
     border-radius: 20px;
@@ -396,6 +396,38 @@
 }
 
 /* Página de contacto */
+#cabeza__contacto {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+#cabeza__contacto .cabeza__logoContacto a img {
+    text-align: center;
+    position: center;
+}
+.textoContacto{
+    width: 100vw;
+    color: pink;
+    text-align: center;
+    background-color: rgb(194, 238, 255);
+    font-family: 'Shalimar';
+}
+#cabeza__contacto .cabeza__menu ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+@media (max-width: 768px){
+    #cabeza__contacto .cabeza__menu ul{
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+        gap: 10px;
+    }
+}
 
 #contacto {
     background-image: url(../imagenes/fondo_sin_color_chico.png);
@@ -404,19 +436,97 @@
 
 #contacto .formulario {
     display: flex;
+    width: 100vw;
+    flex-direction: column;
     padding-top: 3vh;
+    padding: 2vh;
     background-color: pink;
+}
+.formulario .formularioItems {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px){
+    .formulario .formularioItems {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+        gap: 25px;
+        padding-left: 30vw;
+        padding-right: 30vw;
+    }
+}
+#imagenesEnContacto {
+    padding-top: 0;
+}
+.carruselCss {
+    width: 100%;
+    height: auto;
+    margin: 10px auto 0;
+    overflow: hidden;
+}
+.carruselCss ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 700%;
+    height: auto;
+    animation: carruselConCss 28s infinite alternate ease-in-out;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+}
+.carruselCss ul li {
+    width: 100%;
+    list-style: none;
+}
+.carruselCss img {
+    width: 100%;
+}
+@keyframes carruselConCss {
+    0% {margin-left: 0;}
+    10% {margin-left: 0;}
+
+    14% {margin-left: -100%;}
+    24% {margin-left: -100%;}
+
+    28% {margin-left: -200%;}
+    38% {margin-left: -200%;}
+
+    42% {margin-left: -300%;}
+    52% {margin-left: -300%;}
+
+    56% {margin-left: -400%;}
+    66% {margin-left: -400%;}
+
+    70% {margin-left: -500%;}
+    80% {margin-left: -500%;}
+
+    84% {margin-left: -600%;}
+    100% {margin-left: -600%;}
+    
+}
+@media (min-width: 850px) {
+    .carruselCss {
+        display: none;
+    }
 }
 #pieDeContacto {
     width: 100vw;
-    padding-top: 2vh;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+.hijo__1 h3{
+    font-size: 4vh;
+}
+@media (max-width: 768px) {
+    .hijo__1 h3 {
+        font-size: 1rem;
+    }
 }
 
-.textoContacto{
-    color: pink;
-    text-align: center;
-
-}
 /* Página Petit Fours */
 
 .petit__titulo { 
