@@ -407,6 +407,7 @@
 #cabeza__contacto .cabeza__logoContacto a img {
     text-align: center;
     position: center;
+    width: 20vw;
 }
 .textoContacto{
     width: 100vw;
