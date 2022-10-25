@@ -137,7 +137,7 @@
 }
 @media (max-width: 768px) {
   #footerConSass .contenedor__pieSass .hijo__1Sass {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 @-webkit-keyframes textoFooter {
@@ -177,6 +177,6 @@
 }
 @media (max-width: 768px) {
   #footerConSass .contenedor__pieSass .hijo__3Sass a img {
-    width: 15vw;
+    width: 14vw;
   }
 }/*# sourceMappingURL=hojadeestilos.css.map */

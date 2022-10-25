@@ -126,7 +126,7 @@ $tablet: 768px;
             animation-delay: 0s;
             padding-left: 1vh;
             @media (max-width:$tablet) {
-                font-size: 1rem;;
+                font-size: 0.9rem;;
             }
             @keyframes textoFooter {
                 0% {
@@ -156,7 +156,7 @@ $tablet: 768px;
         }
         @media (max-width: $tablet) {
             .hijo__3Sass a img {
-                width: 15vw;
+                width: 14vw;
             }
         }
     }
