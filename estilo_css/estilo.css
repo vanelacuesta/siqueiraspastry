@@ -731,7 +731,8 @@
 }
 .contenedor figure:hover > .capa h3{
     margin-top: 0px;
-    margin-bottom: .5px;
+    margin-bottom: 0.5px;
+    font-size: 1rem;
 }
 .contenedor figure:hover > img{
     transform: scale(1.3);
