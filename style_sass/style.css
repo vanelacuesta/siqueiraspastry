@@ -71,12 +71,15 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+#seccionConSass .productosConSass {
+  background-color: rgb(250, 39, 74);
+  margin: 30vh;
+}
 #seccionConSass .productosConSass__nombre {
   text-align: center;
   color: rgb(250, 39, 74);
   background-color: pink;
   padding-top: 0;
-  margin: 0;
 }
 #seccionConSass .productosConSass__descripcion {
   background-color: rgb(252, 205, 213);
@@ -99,7 +102,7 @@
 
 #footerConSass {
   width: 100vw;
-  height: 12vh;
+  height: auto;
   background: linear-gradient(pink, skyblue);
   margin-top: 10px;
   margin-bottom: 0;
@@ -164,4 +167,40 @@
   #footerConSass .contenedor__pieSass .hijo__3Sass a img {
     width: 15vw;
   }
+}
+
+.productosPrincipal__catalogo {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  gap: 10px 10px;
+  padding: 3vh 3vw;
+  border-radius: 30px;
+}
+.productosPrincipal__catalogo .foto1 {
+  background-image: url(../imagenes/torta8.png);
+  background-size: 100%;
+  background-position: center;
+  text-align: center;
+  font-size: 1rem;
+}
+.productosPrincipal__catalogo .foto2 {
+  background-image: url(../imagenes/petitRecortada12.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.productosPrincipal__catalogo .foto2 p {
+  position: center;
+  z-index: -999999;
+}
+.productosPrincipal__catalogo .foto2 p:hover {
+  transform: scale(3);
+  display: block;
 }/*# sourceMappingURL=style.css.map */
