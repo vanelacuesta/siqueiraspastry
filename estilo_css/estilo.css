@@ -730,8 +730,8 @@
     visibility: visible;
 }
 .contenedor figure:hover > .capa h3{
-    margin-top: 7px;
-    margin-bottom: 1.5px;
+    margin-top: 0px;
+    margin-bottom: .5px;
 }
 .contenedor figure:hover > img{
     transform: scale(1.3);
