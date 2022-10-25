@@ -741,7 +741,7 @@
     font-weight: 400;
     margin-bottom: 120px;
     transition: all 400ms ease-out;
-    margin-top: 30px;
+    margin-top: auto;
 }
 .contenedor figure .capa p{
     color: rgb(48, 51, 252);
