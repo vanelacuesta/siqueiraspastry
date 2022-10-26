@@ -125,6 +125,7 @@
   grid-row: 1/2;
   color: rgb(216, 132, 153);
   font-size: 1rem;
+  font-family: "zesant", sans-serif;
   -webkit-animation: textoFooter;
           animation: textoFooter;
   -webkit-animation-duration: 2s;

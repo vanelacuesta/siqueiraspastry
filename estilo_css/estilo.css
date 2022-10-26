@@ -102,7 +102,7 @@
 
 .cabeza__menu ul li a{
     color: rgb(5, 178, 201);
-    font-style: italic;
+    font-family: 'zesant', sans-serif;
     font-size: large;
     padding: auto;
     text-decoration: none;
@@ -119,15 +119,15 @@
     background-image: url(../imagenes/fondo_sin_color_chico.png);
     background-repeat: repeat;
     background-position: top;
-    padding-top: 1vh;
+    padding-top: 2px;
     height: auto;
 }
 
 #principal h1{
     color:rgb(245, 28, 71);
     text-align: center;
-    font-family: serif;
-    background-color: rgb(169, 211, 228);
+    font-family: 'Amatic SC', cursive;
+    background: linear-gradient(white, rgba(169, 211, 228, 0.7) );
 }
 
 #principal h2{
@@ -136,6 +136,7 @@
     color: pink;
     padding-top: 2vh;
     padding-bottom: 2vh;
+    font-family: 'zesant', sans-serif;
     background-color: rgba(242, 277, 213,0.6);
     width: 100vw;
     animation-name: shakeY ;
@@ -164,7 +165,9 @@
     animation-delay: 0s;
     animation-iteration-count: 1;
 }
-
+.fotos span img{
+    border-radius: 0;
+}
 @media (max-width : 500px) {
     .fotos span img{
         width: 30vw;
@@ -178,10 +181,10 @@
 
 #productos h2 {
     text-align: center;
-    color: rgb(216, 132, 153) ;
+    color: rgb(245, 28, 71);
     background-color: rgb(197, 238, 238);
-    background: linear-gradient(20deg,rgba(197, 238, 238,0.8)70%, rgba(216,132,153,0.7));
-    font-style: italic;
+    background: linear-gradient(20deg,rgba(197, 238, 238,0.8)70%, rgba(245, 28, 71,0.7));
+    font-family: 'zesant', sans-serif;
 }
 
 #productos .contenedor__productos{
@@ -189,9 +192,9 @@
     background-image: url(../imagenes/fondo_sin_color_chico.png);
     background-repeat: repeat;
     width: 100wv;
-    padding-top: 10vh;
+    padding-top: 5vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5px;
+    gap: 10px;
     justify-content: center;
     align-content: center;
     margin: 1vh 1vw;
@@ -539,7 +542,8 @@
     margin-bottom: 0;
 }
 .hijo__1 h3{
-    font-size: 4vh;
+    font-size: 2rem;
+    font-family: 'zesant', sans-serif;
 }
 @media (max-width: 768px) {
     .hijo__1 h3 {
@@ -755,7 +759,7 @@
     color: rgb(60, 166, 166);
     transition: all 400ms ease-out;
     margin-top: 10px;
-    font-size: 1.4rem;
+    font-family: 'Marck Script', cursive;
 }
 .contenedor figure .capa p{
     color: rgb(2, 103, 115);
@@ -764,6 +768,7 @@
     width: 100%;
     margin: auto;
     margin-top: 3px;
+    font-family: 'Dosis', sans-serif;
 }
 @media (max-width: 767px){
     .contenedor figure .capa p{
