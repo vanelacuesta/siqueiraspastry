@@ -102,7 +102,7 @@
 
 .cabeza__menu ul li a{
     color: rgb(5, 178, 201);
-    font-family: 'zesant', sans-serif;
+    font-family: 'Dosis', sans-serif;
     font-size: large;
     padding: auto;
     text-decoration: none;
@@ -137,7 +137,7 @@
     color: pink;
     padding-top: 2vh;
     padding-bottom: 2vh;
-    font-family: 'zesant', sans-serif;
+    font-family: 'Arima Madurai', cursive;
     background-color: rgba(242, 277, 213,0.6);
     width: 100vw;
     animation-name: shakeY ;
@@ -185,7 +185,7 @@
     color: rgb(245, 28, 71);
     background-color: rgb(197, 238, 238);
     background: linear-gradient(20deg,rgba(197, 238, 238,0.8)70%, rgba(245, 28, 71,0.7));
-    font-family: 'zesant', sans-serif;
+    font-family: 'Arima Madurai', cursive;
 }
 
 #productos .contenedor__productos{
@@ -299,6 +299,9 @@
     animation-delay: 0s;
     padding-left: 4px;
     padding: 0.3rem;
+}
+.hijo__1 h3 {
+    font-family: 'Arima Madurai', cursive;
 }
 
 .contenedor__pie .hijo__2 a img {
