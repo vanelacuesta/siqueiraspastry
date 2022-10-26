@@ -97,6 +97,7 @@
     background-color: pink;
     list-style: none;
     transform: translateX(-8%);
+    margin-top: 2px;
 }
 
 .cabeza__menu ul li a{
@@ -225,9 +226,9 @@
     height: auto;
 }
 
-@media (max-width : 768px) {
+@media (max-width : 767px) {
    .producto__item a,img {
-        width: 40vw;
+        width: 43vw;
         justify-content: center;
     }
 }
