@@ -43,6 +43,7 @@
 .cabeza__logo a img {
     width: 15vw;
     margin-top: 3vh;
+    margin-bottom: 1vh;
     animation-name: logoAnimado;
     animation-duration: 1s;
     animation-iteration-count: 1;
@@ -248,12 +249,17 @@
     align-content: center;
     font-family: 'Caveat', cursive;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 2rem;
     border-radius: 10px;
     background-color: rgba(247, 148, 163, 0.9);
     color: rgb(197, 238, 238);
     margin-top: 2px;
     margin-bottom: 2px;
+}
+@media (max-width: 767px){
+    #productos .contenedor__productos .producto__item p{
+        font-size: 1rem;
+    }
 }
 
 #pie {
@@ -342,11 +348,11 @@
     background: linear-gradient(pink, skyblue);
 }
 
-#navegacion .tortas__logo a img {
+.tortas__logo a img {
     width: 15vw;
 }
 @media (max-width: 768px) {
-    #navegacion .tortas__logo a img{
+    .tortas__logo a img{
         width: 30vw;
         padding-top: 0vh;
     }
@@ -791,18 +797,104 @@
         row-gap: 5px;
     }
 }
-
-
 .contenedor__pie {
     background: linear-gradient(skyblue 40%, pink );
     display: flex;
     align-items: center;  
     padding: 1vw; 
 }
-
 @media (max-width: 768px) {
      .contenedor__pie {
         align-content: center;
         align-items: center;
     }
+}
+/* Página de Macarons */
+.macaronsVistaDesktop{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 5vw;
+    background-image: url(../imagenes/fondo_sin_color_chico.png);
+    background-repeat: repeat;
+    justify-items: center;
+}
+.contedorPropio{
+    box-shadow: 20px 3px 15px 20px pink;
+}
+.textoMacarons {
+    background: linear-gradient(rgba(247, 191, 191, 0.9) 70%, rgba(169, 211, 228, 0.7) );
+    padding: 2vw;
+}
+.textoMacarons h1{
+    text-align: center;
+    font-size: 4rem;
+    color: crimson;
+    font-family: 'Parisienne', cursive;
+}
+.textoMacarons .historiaDeMacarons{
+    text-align: justify;
+    color: rgb(0, 40, 56);
+    font-family: 'Amatic SC', cursive;
+    padding-top: 2vh;
+}
+.contenedorSeccionMacarons{
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .contenedorSeccionMacarons{
+        text-align: center;
+        padding: 1vw;
+        width: 100vw;
+    }
+}
+.saboresMacarons{
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .saboresMacarons{
+        display: none;
+    }
+}
+.saboresMacarons ul{
+    display: flex;
+    justify-content: center;
+}
+.saboresMacarons ul li {
+    list-style: inside;
+    text-decoration: none;
+    padding: 5px;
+}
+@media (max-width: 767px) {
+    .saboresMacarons ul li {
+        list-style: none;
+    }
+}
+#macaronsMobile{
+    background-image: url(../imagenes/fondo_sin_color_chico.png);
+    background-repeat: repeat;
+    background-size: 4vh;
+    padding-bottom: 0;
+}
+#macaronsMobile h1 {
+    width: 100vw;
+    text-align: center;
+    font-size: 4rem;
+    color: crimson;
+    font-family: 'Parisienne', cursive;
+    background: radial-gradient(rgba(247, 191, 191, 0.6) 60%, rgba(169, 211, 228, 0.7));
+}
+.historiaDeMacaronsMobile{
+    background: linear-gradient(120deg, rgba(247, 191, 191, 0.6) 60%, rgba(169, 211, 228, 0.7), rgba(243, 237, 237, 0.3));
+    text-align: justify;
+    padding-inline: 5px;
+    padding-top: 0;
+    width: 100vw;
+    border-radius: 10px;
+}
+.historiaDeMacaronsMobile p {
+    padding: 3vw;
+    text-align: justify;
+    color: rgb(0, 40, 56);
+    font-family: 'Amatic SC', cursive;
+    padding-top: 2vh;
 }
