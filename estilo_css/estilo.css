@@ -180,6 +180,7 @@
     text-align: center;
     color: rgb(216, 132, 153) ;
     background-color: rgb(197, 238, 238);
+    background: linear-gradient(20deg,rgba(197, 238, 238,0.8)70%, rgba(216,132,153,0.7));
     font-style: italic;
 }
 
