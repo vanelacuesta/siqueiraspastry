@@ -821,11 +821,13 @@
 @media (max-width: 768px){
     .macaronsVistaDesktop{
         grid-template-columns: 1fr;
+        gap: 3px;
     }
 }
 .textoMacarons {
     background: linear-gradient(rgba(247, 191, 191, 0.9) 70%, rgba(169, 211, 228, 0.7) );
     padding: 2vw;
+    border-radius: 2px;
 }
 .textoMacarons h1{
     text-align: center;
