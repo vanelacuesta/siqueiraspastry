@@ -102,14 +102,30 @@
 }
 
 .cabeza__menu ul li a{
-    color: rgb(5, 178, 201);
+    color: rgb(0, 120, 136);
     font-family: 'Dosis', sans-serif;
     font-size: large;
     padding: auto;
     text-decoration: none;
 }
 
-
+.botonCatalogo{
+    height: 100%;
+    background: linear-gradient(45deg,rgb(220, 20, 60), rgb(202, 47, 78), rgb(248, 202, 209), rgb(255, 192, 203));
+    background-size: 400% 400%;
+    animation: botonAnimado 4s ease-in infinite;
+}
+@keyframes botonAnimado {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 .cabeza__menu ul li:hover {
     background-color: rgb(238, 243, 190);
@@ -353,38 +369,49 @@
 }
 @media (max-width: 768px) {
     .tortas__logo a img{
-        width: 30vw;
+        width: 25vw;
         padding-top: 0vh;
     }
 }
 
 #texto {
     padding: 1vh;
+    padding-bottom: 0;
+    background-image: url(../imagenes/fondo_sin_color_chico.png);
+    background-repeat: repeat;
+    background-size: 4vw;
 }
-
-#texto .tortas__titulo {
+.capaTexto{
+    background: linear-gradient(60deg, rgba(255, 192, 203, 08),rgba(135, 206, 235, 0.8)92% );
+    border-radius: 10px;
+}
+#texto .capaTexto .tortas__titulo {
     text-align: center;
     color: pink;
-    font-style: italic;
+    font-family: 'Parisienne', cursive;
+    font-size: 2.5rem;
 }
 
-.tortas__h3 {
+#texto .capaTexto .parrafoTexto .tortas__h3 {
     text-align: center;
     font-size: medium;
-    color: pink;
+    color: rgb(211, 100, 137);
+    font-family: 'News Cycle', sans-serif;
 }
 
-.tortas__parrafo-1 {
+#texto .capaTexto .parrafoTexto  .tortas__parrafo-1 {
     text-align: center;
     font-size: large;
     color: palevioletred;
+    font-family: 'Amatic SC', cursive;
 }
 
-.tortas__parrafo-2 {
+#texto .capaTexto .parrafoTexto .tortas__parrafo-2 {
     text-align: center;
-    font-size: larger;
+    font-size: 1rem;
     color: palevioletred;
-    font-style: italic;
+    font-family: 'News Cycle', sans-serif;
+    line-height: 1.1;
 }
 
 #tortas .contenedor__fotos{
@@ -406,7 +433,7 @@
     #tortas .contenedor__fotos{
         background-size: 3vh;
         grid-template-columns: 1fr 1fr;
-        gap: 1vh;
+        gap: 1.2vh;
         justify-content: center;
         align-content: center;
     }
@@ -415,6 +442,8 @@
 #tortas .contenedor__fotos div {
     background-color: pink;
     padding: 1vh;
+    border-radius: 5px;
+    box-shadow:0px 1px 10px 0px rgba(135, 206, 235, 0.8);
 }
 
 /* Página de contacto */
@@ -682,13 +711,30 @@
     color: rgb(241, 56, 87);
     font-size: 2rem;
 }
-@media (min-width: 768px) {
+
+@media (min-width: 765px) {
     #productosPrincipal .productosPrincipal__contenedor h1{
-        font-size: 5rem;
+        font-size: 4rem;
+    }
+}
+.contenedorTextoExplicativo{
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(45deg, rgba(247, 191, 191, 0.9) 55%, rgba(169, 211, 228, 0.7), rgba(240, 211, 211, 0.2));
+}
+.contenedorTextoExplicativo h2{
+    color: crimson;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    padding: 1.5vh;
+}
+@media (max-width: 767px) {
+    .contenedorTextoExplicativo h2{
+        font-size: 1rem;
     }
     
 }
-
 .productosPrincipal__catalogo {
     display: grid;
     width: 100vw;
@@ -697,7 +743,6 @@
     align-items: center;
     align-content: center;
     justify-items: center;
-    
     gap: 10px;
 }
 .contenedor{
@@ -754,35 +799,36 @@
 .contenedor figure:hover > .capa h3{
     margin-top: 1vh;
     margin-bottom: 0.5px;
-    font-size: 1rem;
+    font-size: 1.7rem;
 }
-@media (min-width: 768px){
+@media (max-width: 767px){
     .contenedor figure:hover > .capa h3{
-        margin-top: 1vh;
+        margin-top: 10px;
         font-size: 1.2rem;
     }
 }
 .contenedor figure:hover > img{
-    transform: scale(1.3);
+    transform: scale(1.4);
 }
 .contenedor figure .capa h3{
     color: rgb(60, 166, 166);
     transition: all 400ms ease-out;
-    margin-top: 10px;
+    margin-top: 15px;
     font-family: 'Marck Script', cursive;
+    font-size: 1.3rem;
 }
 .contenedor figure .capa p{
     color: rgb(2, 103, 115);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.2;
     width: 100%;
     margin: auto;
-    margin-top: 3px;
+    margin-top: 5px;
     font-family: 'Dosis', sans-serif;
 }
 @media (max-width: 767px){
     .contenedor figure .capa p{
-        font-size: 0.9rem;
+        font-size: 1rem;
         line-height:1;
     }
 }
