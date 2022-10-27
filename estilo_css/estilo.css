@@ -591,15 +591,24 @@
 }
 
 /* Página Petit Fours */
-
+#petit {
+    background: whitesmoke;
+}
 .petit__titulo { 
     text-align: center;
-    color: palevioletred;
+    color: crimson;
+    font-family: 'Parisienne', cursive;
+    font-size: 2rem;
 }
 
-.petit__texto {
+.petit__texto h3 {
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Amatic SC', cursive;
+    color: pink;
+}
+.petit__texto p {
+    text-align: center;
+    font-family: 'News Cycle', sans-serif;
     color: pink;
 }
 
@@ -623,10 +632,8 @@
         background-size: 3vh;
     }
 }
-
-#petitFotos .petit__contenedor div p {
-    background-color: pink;
-    padding: 2vh 2vw;
+#petitFotos .petit__contenedor div img{
+    box-shadow: 5px 10px 10px 0px skyblue ;
 }
 
 /* Estilo de página Nuestros productos */
@@ -720,6 +727,7 @@
 .contenedorTextoExplicativo{
     width: 100vw;
     height: auto;
+    padding-top: 1vh;
     background: linear-gradient(45deg, rgba(247, 191, 191, 0.9) 55%, rgba(169, 211, 228, 0.7), rgba(240, 211, 211, 0.2));
 }
 .contenedorTextoExplicativo h2{
@@ -728,10 +736,25 @@
     text-align: center;
     font-family: 'Dosis', sans-serif;
     padding: 1.5vh;
+    animation-name: atenciontexto;
+    animation-duration: 2s;
+    animation-iteration-count: 4;
+}
+@keyframes atenciontexto {
+    0%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1.2);
+        color: red;
+    }
+    100%{
+        transform: scale(0.8);
+    }
 }
 @media (max-width: 767px) {
     .contenedorTextoExplicativo h2{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     
 }
