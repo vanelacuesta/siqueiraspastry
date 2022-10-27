@@ -827,7 +827,7 @@
 @media (max-width: 767px){
     .contenedor figure:hover > .capa h3{
         margin-top: 10px;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 }
 .contenedor figure:hover > img{
