@@ -727,7 +727,6 @@
 .contenedorTextoExplicativo{
     width: 100vw;
     height: auto;
-    padding-top: 1vh;
     background: linear-gradient(45deg, rgba(247, 191, 191, 0.9) 55%, rgba(169, 211, 228, 0.7), rgba(240, 211, 211, 0.2));
 }
 .contenedorTextoExplicativo h2{
@@ -735,7 +734,7 @@
     font-size: 2rem;
     text-align: center;
     font-family: 'Dosis', sans-serif;
-    padding: 1.5vh;
+    padding: 3px;
     animation-name: atenciontexto;
     animation-duration: 2s;
     animation-iteration-count: 4;
@@ -754,7 +753,7 @@
 }
 @media (max-width: 767px) {
     .contenedorTextoExplicativo h2{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     
 }
