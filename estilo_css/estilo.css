@@ -969,3 +969,15 @@
         list-style:none;
     }
 }
+/* Boton de Whatsapp */
+.whatsapp {
+    position: fixed; 
+    right:25px; 
+    bottom:25px; 
+    z-index:999;
+   }
+   .whatsapp img {
+    width:59px; 
+    height:59px; 
+    opacity: 0.8;
+   }
