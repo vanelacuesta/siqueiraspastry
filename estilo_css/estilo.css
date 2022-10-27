@@ -814,6 +814,7 @@
     display: grid;
     grid-template-columns: 2fr 3fr;
     padding: 5vw;
+    padding-bottom: 3px;
     background-image: url(../imagenes/fondo_sin_color_chico.png);
     background-repeat: repeat;
     justify-items: center;
@@ -827,7 +828,7 @@
 .textoMacarons {
     background: linear-gradient(45deg, rgba(247, 191, 191, 0.9) 55%, rgba(169, 211, 228, 0.7), rgba(240, 211, 211, 0.2));
     padding: 2vw;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 .textoMacarons h1{
     text-align: center;
@@ -839,10 +840,16 @@
     text-align: justify;
     color: rgb(0, 40, 56);
     font-family: 'Amatic SC', cursive;
-    padding-top: 2vh;
+    padding-top: 5px;
+}
+#seccionMacarons{
+    background-image: url(../imagenes/fondo_sin_color_chico.png);
+    background-repeat: repeat;
+    background-size: 4vw;
 }
 .contenedorSeccionMacarons{
     text-align: center;
+    background: linear-gradient(230deg, rgba(247, 191, 191, 0.9) 40%, rgba(169, 211, 228, 0.7), rgba(240, 211, 211, 0.2));
 }
 @media (max-width: 767px) {
     .contenedorSeccionMacarons{
@@ -851,54 +858,46 @@
         width: 100vw;
     }
 }
+.contenedorSeccionMacarons h2{
+    font-family: 'Source Serif Pro', serif;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 5px;
+    color: crimson;
+}
+@media (min-width: 767px){
+    .contenedorSeccionMacarons h2{
+        font-size: 2.5rem;
+    }
+}
 .saboresMacarons{
     text-align: center;
 }
-@media (max-width: 767px) {
-    .saboresMacarons{
-        display: none;
-    }
-}
+
 .saboresMacarons ul{
     display: flex;
     justify-content: center;
+    width: 100vw;
+}
+@media(max-width: 767px){
+    .saboresMacarons ul{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-items: start;
+        align-items: center;
+        padding: 2px;
+    }
 }
 .saboresMacarons ul li {
     list-style: inside;
     text-decoration: none;
-    padding: 5px;
+    padding: 1vw 1vh;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 0.8rem;
 }
-@media (max-width: 767px) {
+@media(max-width: 767px) {
     .saboresMacarons ul li {
-        list-style: none;
+        font-size: 0.8rem;
+        list-style:none;
     }
 }
-/* #macaronsMobile{
-    background-image: url(../imagenes/fondo_sin_color_chico.png);
-    background-repeat: repeat;
-    background-size: 4vh;
-    padding-bottom: 0;
-}
-#macaronsMobile h1 {
-    width: 100vw;
-    text-align: center;
-    font-size: 4rem;
-    color: crimson;
-    font-family: 'Parisienne', cursive;
-    background: radial-gradient(rgba(247, 191, 191, 0.6) 60%, rgba(169, 211, 228, 0.7));
-}
-.historiaDeMacaronsMobile{
-    background: linear-gradient(120deg, rgba(247, 191, 191, 0.6) 60%, rgba(169, 211, 228, 0.7), rgba(243, 237, 237, 0.3));
-    text-align: justify;
-    padding-inline: 5px;
-    padding-top: 0;
-    width: 100vw;
-    border-radius: 10px;
-}
-.historiaDeMacaronsMobile p {
-    padding: 3vw;
-    text-align: justify;
-    color: rgb(0, 40, 56);
-    font-family: 'Amatic SC', cursive;
-    padding-top: 2vh;
-} */
