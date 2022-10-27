@@ -825,7 +825,7 @@
     }
 }
 .textoMacarons {
-    background: linear-gradient(rgba(247, 191, 191, 0.9) 70%, rgba(169, 211, 228, 0.7) );
+    background: linear-gradient(45deg, rgba(247, 191, 191, 0.9) 55%, rgba(169, 211, 228, 0.7), rgba(240, 211, 211, 0.2));
     padding: 2vw;
     border-radius: 2px;
 }
