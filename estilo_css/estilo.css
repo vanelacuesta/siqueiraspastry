@@ -818,12 +818,29 @@
     background-repeat: repeat;
     justify-items: center;
 }
-.contedorPropio{
-    box-shadow: 20px 3px 15px 20px pink;
+@media (max-width:767px) {
+    .macaronsVistaDesktop{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        justify-items: center;
+        padding: 3px;
+    }
 }
+.container-fluid{
+    width: 100vw;
+    padding: 1vw;
+}
+
 .textoMacarons {
-    background: linear-gradient(rgba(247, 191, 191, 0.9) 70%, rgba(169, 211, 228, 0.7) );
+    background: linear-gradient(rgba(99, 75, 75, 0.9) 70%, rgba(169, 211, 228, 0.7) );
     padding: 2vw;
+    border-radius: 5px;
+}
+@media(max-width:767px){
+    .textoMacarons{
+        background: none;
+    }
 }
 .textoMacarons h1{
     text-align: center;
@@ -831,11 +848,27 @@
     color: crimson;
     font-family: 'Parisienne', cursive;
 }
+@media(max-width:767px){
+    .textoMacarons h1 {
+        width: 100vw;
+        text-align: center;
+        font-size: 4rem;
+        color: crimson;
+        font-family: 'Parisienne', cursive;
+        background: radial-gradient(rgba(247, 191, 191, 0.6) 60%, rgba(169, 211, 228, 0.7));
+        border-radius: 2px;
+    }
+}
 .textoMacarons .historiaDeMacarons{
     text-align: justify;
     color: rgb(0, 40, 56);
     font-family: 'Amatic SC', cursive;
     padding-top: 2vh;
+}
+@media(max-width:767px){
+    .textoMacarons .historiaDeMacarons{
+        background-color: rgba(255, 192, 203, 0.6);
+    }
 }
 .contenedorSeccionMacarons{
     text-align: center;
@@ -869,7 +902,7 @@
         list-style: none;
     }
 }
-#macaronsMobile{
+/* #macaronsMobile{
     background-image: url(../imagenes/fondo_sin_color_chico.png);
     background-repeat: repeat;
     background-size: 4vh;
@@ -897,4 +930,4 @@
     color: rgb(0, 40, 56);
     font-family: 'Amatic SC', cursive;
     padding-top: 2vh;
-}
+} */
