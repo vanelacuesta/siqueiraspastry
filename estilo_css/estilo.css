@@ -954,7 +954,7 @@
     width: 100vw;
     animation: saboresmov  infinite ease-in-out;
     animation-duration: 30s;
-    animation-delay: 0;
+    animation-delay: 0ms;
 
 }
 @keyframes saboresmov {
@@ -973,7 +973,7 @@
     80%{
         transform: translateX(-75%);
     }
-    100%{
+    99%, 100%{
         transform: translateX(-100%);
     }
 }
@@ -989,17 +989,16 @@
     }
 }
 .saboresMacarons ul li {
-    list-style: inside;
+    list-style: none;
     text-decoration: none;
     padding: 1vw 1vh;
     font-family: 'Fuzzy Bubbles', cursive;
-    font-size: 0.8rem;
+    font-size: 1rem;
     overflow: hidden;
 }
 @media(max-width: 767px) {
     .saboresMacarons ul li {
         font-size: 0.8rem;
-        list-style:none;
     }
 }
 /* Boton de Whatsapp */
