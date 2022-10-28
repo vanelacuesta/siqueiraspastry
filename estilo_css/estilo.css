@@ -102,7 +102,7 @@
 }
 
 .cabeza__menu ul li a{
-    color: rgb(0, 120, 136);
+    color: rgb(1, 104, 117);
     font-family: 'Dosis', sans-serif;
     font-size: large;
     padding: auto;
@@ -850,7 +850,7 @@
 }
 @media (max-width: 767px){
     .contenedor figure .capa p{
-        font-size: 1rem;
+        font-size: 1.2rem;
         line-height:1;
     }
 }
@@ -972,12 +972,21 @@
 /* Boton de Whatsapp */
 .whatsapp {
     position: fixed; 
-    right:25px; 
-    bottom:25px; 
+    bottom: 100px; 
+    right: 20px;
     z-index:999;
    }
    .whatsapp img {
     width:59px; 
     height:59px; 
     opacity: 0.8;
-   }
+}
+
+/* Efecto en capa de texto */
+#seccionConSass .productosConSass:hover > .textoConSass {
+    opacity: 1;
+    visibility: visible;
+}
+#seccionConSass .productosConSass:hover > img{
+    transform: scale(1.1);
+}

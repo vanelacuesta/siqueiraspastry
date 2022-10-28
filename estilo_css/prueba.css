@@ -1,0 +1,87 @@
+##seccionConSass{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    height: auto;
+    gap: 5px;
+    padding-top: 1vh;
+}
+@media(max-width:768px){
+    #seccionConSass{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+#seccionConSass .productosConSass{
+    position:relative;
+    cursor: pointer;
+    width: 21vw;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(241, 56, 87, 0.7);
+}
+@media (max-width: 768px) {
+    #seccionConSass .productosConSass{
+        width: 43vw;
+    }
+}
+#seccionConSass .productosConSass img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+}
+#seccionConSass .productosConSass .textoConSass{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(245, 154, 169, 0.7);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+#seccionConSass .productosConSass:hover > .textoConSass {
+    opacity: 1;
+    visibility: visible;
+}
+#seccionConSass .productosConSass:hover > .textoConSass h3{
+    margin-top: 1vh;
+    margin-bottom: 0.5px;
+    font-size: 1.7rem;
+}
+@media (max-width: 767px){
+    #seccionConSass .productosConSass:hover > .textoConSass h3{
+        margin-top: 10px;
+        font-size: 1.4rem;
+    }
+}
+#seccionConSass .productosConSass:hover > img{
+    transform: scale(1.4);
+}
+#seccionConSass .productosConSass .textoConSass h3{
+    color: rgb(60, 166, 166);
+    transition: all 400ms ease-out;
+    margin-top: 15px;
+    font-family: 'Marck Script', cursive;
+    font-size: 1.3rem;
+}
+#seccionConSass .productosConSass .textoConSass p{
+    color: rgb(2, 103, 115);
+    font-size: 1.2rem;
+    line-height: 1.2;
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+    font-family: 'Dosis', sans-serif;
+}
+@media (max-width: 767px){
+    #seccionConSass .productosConSass .textoConSass p{
+        font-size: 1.2rem;
+        line-height:1;
+    }
+}
