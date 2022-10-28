@@ -294,13 +294,13 @@
 }
 @keyframes textoPie {
     0% {
-        color: rgb(243, 36, 74);
+        color: crimson;
     }
     50% {
-        color:rgb(11, 33, 235);
+        color:skyblue;
     }
     100% {
-        color: rgb(243, 36, 74);
+        color: crimson;
     }
     
 }
