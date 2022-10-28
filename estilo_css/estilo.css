@@ -294,13 +294,13 @@
 }
 @keyframes textoPie {
     0% {
-        color: crimson;
+        color: rgb(242, 102, 139);
     }
     50% {
-        color:skyblue;
+        color:rgb(2, 104, 115);
     }
     100% {
-        color: crimson;
+        color: rgb(242, 102, 139);
     }
     
 }
@@ -647,7 +647,7 @@
     animation-duration: 15s;
     animation-delay: 0ms;
     animation-iteration-count: infinite;
-    transition-duration: 1s;
+    transition-duration: 0.6s;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -655,7 +655,7 @@
     justify-items: center;
 }
 @keyframes fotosdefondo {
-    0% {
+    0%, 33% {
         background-image: url(../imagenes/31.png);
         background-position: center center;
         background-repeat: no-repeat;
@@ -663,7 +663,7 @@
         height: 20vw;
         width: 100vw;
     }
-    33% {
+    33%, 66% {
         background-image: url(../imagenes/40.png);
         background-position: center center;
         background-repeat: no-repeat;
