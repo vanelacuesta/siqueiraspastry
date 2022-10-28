@@ -17,6 +17,7 @@ $tablet: 767px;
         color: white;
         text-align: center;
         position: fixed;
+        z-index: 999999999999;
         width: 100vw; 
     }
     .logoConSass{
@@ -42,12 +43,12 @@ $tablet: 767px;
     .principalConSass__titulo{
         text-align: center;
         color: pink;
-        font-family: 'Bad Script', cursive;
+        font-family: 'Parisienne', cursive;
         font-size: 2.2rem;
     }
     .principalConSass__texto {
         color: crimson;
-        font-family: sans-serif;
+        font-family: 'Amatic SC', cursive;
         font-size: 1.1rem;
         text-align: center;
     }
@@ -72,7 +73,7 @@ $tablet: 767px;
     .productosConSass{
         display: grid;
         grid-template-columns: 1fr;
-        align-items: center;
+        align-items:stretch;
         align-content: center;
         justify-content: center;
         justify-items: center;
@@ -104,13 +105,16 @@ $tablet: 767px;
         }
         .textoConSass {
             position: absolute;
-            width:42vw;
+            width:33vw;
             background: rgba(245, 154, 169, 0.8);
-            transition: all 400ms ease-out;
+            transition: all 600ms ease-out;
             opacity: 0;
             visibility: hidden;
             text-align: center;
             border-radius: 10px;
+            @media (max-width: $tablet) {
+                width: 45vw;
+            }
             p{
                 color: rgb(2, 103, 115);
                 font-size: 1.2rem;
@@ -120,14 +124,12 @@ $tablet: 767px;
                 margin-top: 5px;
                 font-family: 'Dosis', sans-serif;
                 @media (max-width: 767px){
-                    font-size: 1.2rem;
+                    font-size: 1.3rem;
                     line-height:1;
                 }
             }
         }
-
     }
-    
 
 }
 #footerConSass{
