@@ -1004,14 +1004,24 @@
 /* Boton de Whatsapp */
 .whatsapp {
     position: fixed; 
-    bottom: 100px; 
-    right: 20px;
+    bottom: 15vh; 
+    right: 8vw;
     z-index:999999999;
    }
    .whatsapp img {
-    width:59px; 
-    height:59px; 
+    width: 15vw; 
     opacity: 0.6;
+    animation: atencionboton 2s;
+    animation-iteration-count: 3;
+    animation-delay: 5s;
+}
+@keyframes atencionboton {
+    0%
+        {transform: scale(1);}
+    50%
+        {transform: scale(1.4);}
+    100%
+        {transform: scale(1);}
 }
 
 /* Efecto en capa de texto */
