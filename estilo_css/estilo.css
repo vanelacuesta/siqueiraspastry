@@ -114,6 +114,9 @@
     background: linear-gradient(45deg,rgb(220, 20, 60), rgb(202, 47, 78), rgb(248, 202, 209), rgb(255, 192, 203));
     background-size: 400% 400%;
     animation: botonAnimado 4s ease-in infinite;
+    font-family: 'BenchNine', sans-serif;
+    text-decoration: none;
+    font-size: large;
 }
 @keyframes botonAnimado {
     0% {
@@ -125,6 +128,10 @@
     100% {
         background-position: 0% 50%;
     }
+}
+.botonCatalogo a{
+    color: rgb(125, 190, 216);
+    text-decoration: none;
 }
 
 .cabeza__menu ul li:hover {
@@ -356,6 +363,9 @@
     display: flex;
     justify-content: center;
     padding-top: 4vh;
+    text-decoration: none;
+}
+.tortas__logo a{
     text-decoration: none;
 }
 .tortas__logo a img {
@@ -1071,8 +1081,8 @@
     margin-top: 2px;
     text-decoration: none;
 }
-.botonCatalogo ul .botonCatalogo a {
-    color: rgb(1, 104, 117);
+/* .botonCatalogo .botonCatalogo a {
+    color: rgb(117, 1, 1);
     font-family: 'BenchNine', sans-serif;
     font-size: large;
     padding: auto;
@@ -1082,3 +1092,4 @@
     text-align: center;
     text-decoration: none;
 }
+ */
