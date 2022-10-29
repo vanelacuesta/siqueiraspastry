@@ -323,7 +323,7 @@
 }
 .hijo__1 {
     color: rgb(216, 132, 153);
-    font-size: 1rem;
+    font-size: 0.9rem;
     animation: textoPie;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -331,7 +331,7 @@
     padding-left: 4px;
 }
 .hijo__1 h3 {
-    font-family: 'Arima Madurai', cursive;
+    font-family: 'Oxygen', sans-serif;
 }
 
 .contenedor__pie .hijo__2 a img {
@@ -361,6 +361,12 @@
     color: dimgray;
     padding:3px;
     margin-bottom: 0;
+}
+@media (min-width: 700px)
+{
+    .siqueiras p{
+        font-size: 1rem;
+    }
 }
 /* Estilo página Tortas */
 #navegacionTortas{
@@ -596,7 +602,7 @@
 }
 .hijo__1 h3{
     font-size: 2rem;
-    font-family: 'Source Serif Pro', serif;
+    font-family: 'Oxygen', sans-serif;
 }
 @media (max-width: 768px) {
     .hijo__1 h3 {
