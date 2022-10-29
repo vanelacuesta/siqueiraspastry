@@ -1067,6 +1067,7 @@
     width: 100%;
     padding: 1vh;
     margin-top: 2px;
+    text-decoration: none;
 }
 .botonCatalogo a {
     color: rgb(1, 104, 117);
