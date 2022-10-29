@@ -1058,6 +1058,7 @@
     justify-items: center;
     align-content: center;
     padding-bottom: 5px;
+    text-decoration: none;
 }
 .botonCatalogo{
     list-style: none;
@@ -1070,7 +1071,7 @@
     margin-top: 2px;
     text-decoration: none;
 }
-.botonCatalogo ul li a {
+.botonCatalogo ul .botonCatalogo a {
     color: rgb(1, 104, 117);
     font-family: 'BenchNine', sans-serif;
     font-size: large;
@@ -1080,8 +1081,4 @@
     padding: 10px;
     text-align: center;
     text-decoration: none;
-}
-.botonCatalogo ul li a:focus {
-    background-color: #64B5f6;
-    color: crimson;
 }
