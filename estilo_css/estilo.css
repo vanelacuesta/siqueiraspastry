@@ -360,6 +360,7 @@
 }
 .tortas__logo a img {
     width: 15vw;
+    text-decoration: none;
 }
 @media (max-width: 768px) {
     .tortas__logo a img{
@@ -1079,4 +1080,8 @@
     padding: 10px;
     text-align: center;
     text-decoration: none;
+}
+.botonCatalogo ul li a:focus {
+    background-color: #64B5f6;
+    color: crimson;
 }
