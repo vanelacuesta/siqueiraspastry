@@ -117,6 +117,7 @@
     animation: botonAnimado 4s ease-in infinite;
     font-family: 'BenchNine', sans-serif;
     text-decoration: none;
+    list-style: none;
     font-size: large;
     text-align: center;
 }
@@ -785,6 +786,8 @@
     align-content: center;
     justify-items: center;
     gap: 10px;
+    background-image: url(../imagenes/fondo_sin_color_chico.png);
+    background-repeat: repeat;
 }
 .contenedor{
     width: 100vw;
@@ -798,11 +801,60 @@
     gap: 5px;
     padding-top: 1vh;
 }
+@media(max-width:920px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr 1fr;   
+    }
+} 
 @media(max-width:768px){
     .contenedor{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;   
+    }
+    .contenedor :nth-child(2){
+        grid-row: 1/3;
+        grid-column: 1/3;
+        width: 60vw;
+        height: 70%;
+    }
+    .contenedor :nth-child(12){
+        grid-row: 5/6;
+        grid-column: 1/3;
+        width: 60vw;
+        height: 80%;
+    }
+    .contenedor :nth-child(21){
+        grid-row: 9/10;
+        grid-column: 1/3;
+        width: 60vw;
+        height: 80%;
+    }
+    .contenedor :nth-child(45){
+        grid-row: 30/31;
+        grid-column: 1/3;
+        width: 60vw;
+        height: 80%;
+    }
+    .contenedor :nth-child(47){
+        grid-row: 20/21;
+        grid-column: 1/3;
+        width: 60vw;
+        height: 80%;
+    }
+
+    .contenedor :nth-child(48){
+        grid-row: 15/16;
+        grid-column: 1/3;
+        width: 60vw;
+        height: 80%;
+    }
+    .contenedor :nth-child(50){
+        grid-row: 25/26;
+        grid-column: 1/3;
+        width: 70vw;
+        height: 80%;
     }
 }
+
 .contenedor figure{
     position:relative;
     cursor: pointer;
@@ -816,6 +868,7 @@
         width: 43vw;
     }
 }
+
 .contenedor figure img{
     width: 100%;
     height: 100%;
@@ -1093,7 +1146,8 @@
     align-content: center;
     padding-bottom: 5px;
     text-decoration: none;
-}
+    list-style: none;
+} 
 .botonCatalogo{
     list-style: none;
     border-radius: 20px;

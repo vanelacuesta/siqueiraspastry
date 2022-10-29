@@ -242,4 +242,35 @@
   #footerConSass .contenedor__pieSass .hijo__3Sass a img {
     width: 16vw;
   }
+}
+
+.contenedor__botonCatalogo {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  justify-items: center;
+  align-content: center;
+  padding-bottom: 5px;
+  text-decoration: none;
+  list-style: none;
+}
+.contenedor__botonCatalogo ul {
+  text-decoration: none;
+  list-style: none;
+}
+.contenedor__botonCatalogo ul .botonCatalogo {
+  list-style: none;
+  border-radius: 20px;
+  border: 1px rgb(243, 231, 165);
+  border-style: groove;
+  text-align: justify;
+  width: 100%;
+  padding: 1vh;
+  margin-top: 2px;
+  text-decoration: none;
+}
+.contenedor__botonCatalogo ul .botonCatalogo a {
+  color: rgb(125, 190, 216);
+  text-decoration: none;
+  list-style: none;
 }/*# sourceMappingURL=hojadeestilos.css.map */
