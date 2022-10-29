@@ -1069,7 +1069,7 @@
     margin-top: 2px;
     text-decoration: none;
 }
-.botonCatalogo a {
+.botonCatalogo ul li a {
     color: rgb(1, 104, 117);
     font-family: 'BenchNine', sans-serif;
     font-size: large;
