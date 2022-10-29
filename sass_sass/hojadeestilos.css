@@ -91,6 +91,14 @@
     grid-column: 1/3;
     grid-row: 10/11;
   }
+  #seccionConSass :nth-child(17) {
+    grid-column: 1/3;
+    grid-row: 12/13;
+  }
+  #seccionConSass :nth-child(23) {
+    grid-row: 14/15;
+    grid-column: 1/3;
+  }
 }
 #seccionConSass .productosConSass {
   width: 28vw;

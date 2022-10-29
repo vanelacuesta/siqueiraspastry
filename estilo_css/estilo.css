@@ -99,6 +99,7 @@
     list-style: none;
     transform: translateX(-8%);
     margin-top: 2px;
+    text-align: center;
 }
 
 .cabeza__menu ul li a{
