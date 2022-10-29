@@ -132,6 +132,7 @@
 .botonCatalogo a{
     color: rgb(125, 190, 216);
     text-decoration: none;
+    list-style: none;
 }
 
 .cabeza__menu ul li:hover {
@@ -350,6 +351,7 @@
 #navegacionTortas{
     width: 100vw;
     background: linear-gradient( pink, skyblue);
+    text-decoration: none;
 }
 .banner__fijo{
     background-color: rgb(151, 18, 18) ;
@@ -591,6 +593,7 @@
 #navegacion{
     width: 100vw;
     background: linear-gradient( pink, skyblue);
+    text-decoration: none;
 }
 #petit {
     background: whitesmoke;
